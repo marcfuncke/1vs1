@@ -197,7 +197,7 @@ public class Commands implements CommandExecutor{
 									Main.spectator.remove(p.getName());
 									Main.spectator.put(p.getName(), arena.getID());
 									p.sendMessage(Main.pr + "§cDu beobachtest nun Arena §e" + arena.getName());
-									p.sendMessage(Main.pr + "§bSchreibe §9/YCCPvP watch leave §bzum Verlassen des Beobachter-Modus");
+									p.sendMessage(Main.pr + "§bSchreibe §9/YCCPvP arena watch leave §bzum Verlassen des Beobachter-Modus");
 									p.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 999999999, 2));
 									p.setAllowFlight(true);
 									p.setFlying(true);

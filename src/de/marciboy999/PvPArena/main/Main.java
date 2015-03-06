@@ -26,7 +26,7 @@ public class Main extends JavaPlugin{
 	
 	public static Main m;
 	
-	public static String pr = "§0[§cYYC§0] §a";
+	public static String pr = "§0[§cYYCArena§0] §a";
 	
 	public static List<Arena> arenas = new ArrayList<Arena>();
 	public static HashMap<String, String> ask = new HashMap<String, String>();
@@ -245,8 +245,8 @@ public class Main extends JavaPlugin{
 		ask.put(p.getName(), t.getName());
 		askArena.put(p.getName(), arena.getID());
 		t.sendMessage(Main.pr + "§aSpieler §e" + p.getDisplayName() + " §afordert dich zu einem Kampf in der §5Arena " + arena.getName() + " §aum §4"+betrag+" Berry §aheraus");
-		t.sendMessage(Main.pr + "§3Um den Kampf anzunehmen, tippe §2§o/yccpvp arena accept");
-		t.sendMessage(Main.pr + "§3Um den Kampf abzulehnen, tippe §2§o/yccpvp arena deny");
+		t.sendMessage(Main.pr + "§3Um den Kampf anzunehmen, tippe §2§o/yccpvp arena accept " + p.getName());
+		t.sendMessage(Main.pr + "§3Um den Kampf abzulehnen, tippe §2§o/yccpvp arena deny " + p.getName());
 		p.sendMessage(Main.pr + "§aAnfrage wurde verschickt");
 		arena.setBluePlayer(p.getName());
 		arena.setMaybe(true);
