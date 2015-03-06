@@ -1,0 +1,8 @@
+name: 1vs1
+main: de.marciboy999.PvPArena.main.Main
+author: marciboy999
+version: 1.0
+
+commands:
+  yccpvp:
+    description: PvP Arena Kommando
